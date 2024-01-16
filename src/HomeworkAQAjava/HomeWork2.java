@@ -50,67 +50,10 @@ public class HomeWork2 {
      int splitT3 = splittext3.length;
      System.out.println(splitT3);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
 
 
-        /*int mercedes = (1 + (3*(2-4))%3 + (11-7)*2)+(3-5)*3;
-
-        int volvo = mercedes*3 - 9%mercedes + 16-(-mercedes);
-        int opel = mercedes%volvo;
-        System.out.println(mercedes);
-        System.out.println(volvo);
-        System.out.println(opel);*/
-   /*     int x = 3;
-        int y = ++x*2;
-        x+=-y*3 + ++x + --y;
-        y+=(-x++)%3;
-        int z = x + y;
-        System.out.println(x);
-        System.out.println(y);
-        System.out.println(z);*/
-     /*   boolean a = (85/5 + (19-25%3))==(-3)*(-2+14/(-2))&&(2%7-1)*3<=2;
-        boolean b = !a||a&&!a;
-        boolean c = false&&!true||!((23%3+14)%3==7);
-        System.out.println(a);
-        System.out.println(b);
-        System.out.println(c);*/
-//                int a = 7;
-//                int b = 9;
-//
-//                a = a + b;
-//                b = a - b;
-//                a = a - b;
-//                System.out.println(a);
-//                System.out.println(b);
 
 
 
