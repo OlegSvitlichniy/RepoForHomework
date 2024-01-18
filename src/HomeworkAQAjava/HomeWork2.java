@@ -47,7 +47,7 @@ public class HomeWork2 {
              + "In it, we just need to determine how many times the character 'a' occurs there. "
              + "And we can use the split method and the length method.";
      String[] splittext3 = text3.split("a");
-     int splitT3 = splittext3.length;
+     int splitT3 = splittext3.length-1;
      System.out.println(splitT3);
 
     }
