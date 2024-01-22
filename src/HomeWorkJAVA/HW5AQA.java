@@ -37,6 +37,7 @@ public class HW5AQA {
             }
             System.out.println("Мои поздравления " + theName + ". Вы угадали, это действительно число: " + x );
             System.out.println("...[GAME OVER]...");
+            System.out.println("================================================================");
         }
         }
     }
