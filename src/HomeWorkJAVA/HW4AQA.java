@@ -114,15 +114,15 @@ public class HW4AQA {
         /*Есть одномерный массив из 10 элементов, заполненный случайными числами.
         Пользователь вводит с клавиатуры число.
         Программа показывает есть ли такое число в созданном до этого массиве.*/
-    /*    Scanner scanNumber = new Scanner(System.in);
+     /*   Scanner scanNumber = new Scanner(System.in);
         System.out.println("Введите число:");
         int number = scanNumber.nextInt();
         Random randomX = new Random();
         int numbT5[];
         numbT5 = new int[10];
             for (int i = 0; i < 10; i++){
-                numbT5[i]=randomX.nextInt(1,100);
-                System.out.println(numbT5[i]);
+                numbT5[i]=randomX.nextInt(100)+1;
+                System.out.println(Arrays.toString(numbT5));
                 if (numbT5[i]==number) {
                     System.out.println("Ваше число есть в массиве");
                 }
