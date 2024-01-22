@@ -1,5 +1,11 @@
 package HomeWorkJAVA;
 
+
+
+
+
+import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 public class HW4AQA {
@@ -7,9 +13,20 @@ public class HW4AQA {
 
 
         /*TASK1*/
-   /* Написать программу, которая будет считывать введенные пользователем слова с клавиатуры слова,
+   /* Написать программу, которая будет считывать введенные пользователем с клавиатуры слова,
    и склеивать их в одно предложение до тех пор, пока пользователь не введет с клавитуры слово STOP.
    Все слова введенные до этого должны отобразится в консоли одним предложением.*/
+     /*  Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите слово:");
+        String stringTask1 = scanner.nextLine();
+        String summaryStrings = "";
+        while (!stringTask1.equalsIgnoreCase("STOP")){
+            summaryStrings = stringTask1+ " " + summaryStrings;
+            System.out.println(summaryStrings);
+            System.out.println("Введите слово:");
+             stringTask1 = scanner.nextLine();
+        }
+        System.out.println(summaryStrings);  */
 
 
         /* System.out.println("==================================================================");*/
@@ -79,20 +96,72 @@ public class HW4AQA {
         Пользователь вводит три числа с клавиатуры, которые будут соответствовать индексам каждого из элементов массивов.
         Пример1. после ввода 3,2,1: На экране должно вывестись следующее сообщение: “Федя будет идти в магазин в 14:00”
         Пример2. после ввода 1,2,3: На экране должно вывестись следующее сообщение: “Маша будет идти в тренажерный зал в 14:00”*/
+   /*     Scanner scannerTask4 = new Scanner(System.in);
+        String names[] ={"Петя","Маша","Алена","Федя","Саша","Антон","Глеб"};
+        String places[] ={"школу","магазин","церковь","тренажерный зал","кино","поликлиннику"};
+        int numbers[] = {10,12,14,16,18,20};
+
+        System.out.println("Введите три числа:)");
+        int name = scannerTask4.nextInt();
+        int place = scannerTask4.nextInt();
+        int number = scannerTask4.nextInt();
+        System.out.println(names[name]+" будет идти в "+ places[place]+"в "+ numbers[number]+":00");   */
+
+
+      /*  System.out.println("======================================================"); */
 
         /*TASK5*/
-        /*Есть одномерный массив из 10 элементов, заполнен- ный случайными числами.
+        /*Есть одномерный массив из 10 элементов, заполненный случайными числами.
         Пользователь вводит с клавиатуры число.
         Программа показывает есть ли такое число в созданном до этого массиве.*/
+    /*    Scanner scanNumber = new Scanner(System.in);
+        System.out.println("Введите число:");
+        int number = scanNumber.nextInt();
+        Random randomX = new Random();
+        int numbT5[];
+        numbT5 = new int[10];
+            for (int i = 0; i < 10; i++){
+                numbT5[i]=randomX.nextInt(1,100);
+                System.out.println(numbT5[i]);
+                if (numbT5[i]==number) {
+                    System.out.println("Ваше число есть в массиве");
+                }
+                if(numbT5[i]!=number){
+                    System.out.println("Вашего числа нет в массиве");
+            }
+        }*/
 
+       /* System.out.println("======================================================");*/
 
         /*TASK6*/
         /*Заполнить массив на 45 элементов случайными числами от -50 до +50.
         Найти минимальный элемент и вывести его на консоль.
         Найти максимальный элемент и вывести его на консоль.*/
+   /*     Random random = new Random();
+        int[] forArray = new int[45];
+        int minValue =51;
+        int maxValue =-51;
+        for (int i = 0; i < forArray.length; i++){
+            forArray[i] = random.nextInt(-50,50);
+            System.out.println(forArray[i]);
+            if (forArray[i]<minValue){
+                minValue = forArray[i];
+            }
+            if (forArray[i]>maxValue){
+                maxValue=forArray[i];
+            }
+        }
+        System.out.println("Минимальное значение в масиве = "+minValue);
+        System.out.println("Максимальное значение в масиве= "+maxValue);   */
 
 
 
+        /*Решение задачи при помощи Stream*/
+        /*System.out.println(Arrays.toString(forArray));
+        int min = Arrays.stream(forArray).min().getAsInt();
+        System.out.println("Минимальное число массива: " + min);
+        int max = Arrays.stream(forArray).max().getAsInt();
+        System.out.println("Максимальное число массива: " + max);*/
 
 
 
