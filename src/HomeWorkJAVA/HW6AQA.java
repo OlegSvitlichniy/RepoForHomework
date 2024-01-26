@@ -66,6 +66,7 @@ public class HW6AQA {
 [5, -, *, -, -, *]*/
 
        Scanner scanForShoting = new Scanner(System.in);
+        System.out.println("Привет)) У меня все готово! Сиграем??");
         String[][] target = {{"0", "1", "2", "3", "4", "5"},
                 {"1", "-", "-", "-", "-", "-"},
                 {"2", "-", "-", "-", "-", "-"},
