@@ -65,7 +65,7 @@ public class HW6AQA {
 [4, -, -, *, -, -]
 [5, -, *, -, -, *]*/
 
-      /*  Scanner scanForShoting = new Scanner(System.in);
+       Scanner scanForShoting = new Scanner(System.in);
         String[][] target = {{"0", "1", "2", "3", "4", "5"},
                 {"1", "-", "-", "-", "-", "-"},
                 {"2", "-", "-", "-", "-", "-"},
@@ -78,16 +78,24 @@ public class HW6AQA {
             }
             System.out.println();
         }
-        while (target[2][4]!="x") {
+        while (target[2][4]!="X") {
             System.out.println("Введите линию для стрельбы от 1 до 5:");
             int a = scanForShoting.nextInt();
-            if (a<1 && a >5) {
+            if (a<1) {
+                System.out.println("Ваше число не подходит. Повторите попытку.");
+                continue;
+            }
+            if (a>5) {
                 System.out.println("Ваше число не подходит. Повторите попытку.");
                 continue;
             }
             System.out.println("Введите столбец для стрельбы от 1 до 5:");
             int b = scanForShoting.nextInt();
-            if (b<1 && b>5){
+            if (b<1 ){
+                System.out.println("Ваше число не подходит. Повторите попытку.");
+                continue;
+            }
+            if (b>5){
                 System.out.println("Ваше число не подходит. Повторите попытку.");
                 continue;
             }
@@ -103,7 +111,31 @@ public class HW6AQA {
                 System.out.println("Попробуйте еще)");
                 continue;
             }
-            if (a==2||b==4){
+            if (a==2&&b!=4){
+                target[a][b]="*";
+                for (int i = 0; i < target.length; i++) {
+                    for (int j = 0; j < target[i].length; j++) {
+                        System.out.print(target[i][j] + "\t");
+                    }
+                    System.out.println();
+                }
+                System.out.println("....МОЛОКО....");
+                System.out.println("Попробуйте еще)");
+                continue;
+            }
+            if (a!=2&&b==4){
+                target[a][b]="*";
+                for (int i = 0; i < target.length; i++) {
+                    for (int j = 0; j < target[i].length; j++) {
+                        System.out.print(target[i][j] + "\t");
+                    }
+                    System.out.println();
+                }
+                System.out.println("....МОЛОКО....");
+                System.out.println("Попробуйте еще)");
+                continue;
+            }
+            if (a==2&&b==4){
                 target[2][4] = "X";
                 for (int i = 0; i < target.length; i++) {
                     for (int j = 0; j < target[i].length; j++) {
@@ -114,7 +146,7 @@ public class HW6AQA {
                 System.out.println("Поздравляю, вы  выграли))");
                 break;
             }
-        }   */
+        }
     }
 }
 
