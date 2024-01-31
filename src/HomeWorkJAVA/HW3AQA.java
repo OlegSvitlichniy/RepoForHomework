@@ -142,7 +142,7 @@ string4 = Что еще нужно?
 
        switch (program + OS) {
            case ("Intellij Idea + Windows"):
-               System.out.println("Ссылка на скачивание Intellij Idea для Windows");
+               System.out.println("Сcылка на скачивание Intellij Idea для Windows");
                break;
            case ("Intellij Idea + Linux"):
                System.out.println("Ссылка на скачивание Intellij Idea для Windows");

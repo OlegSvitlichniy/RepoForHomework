@@ -2,7 +2,7 @@ package HomeWorkJAVA;
 
 public class HW2AQA {
     public static void main(String[] args) {
-        /*TASK1*/
+        /*TASk1*/
         String string1 = "This line that i want to cut, cause it is too long";
         String string2 = "This line that i want to cut, cause it is too long".substring(0 , 35);
         String string3 = "This line that don't want to cut, cause it is perfect".substring(0 , 35);
