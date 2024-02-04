@@ -63,14 +63,13 @@ public class HW4AQA {
         и уведомляет пользователя, о невозможности данной операции.
         Если пользователь сдает металл весом меньше чем 5, программа тоже предупреждает о невозможности приемки такого малого веса.
         Программа завершается, когда место на складе закончилось.  */
-    /*    Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Введите вместимость вашего склада:");
         int capacity = scanner.nextInt();
         int balanceOnYourStock = 0;
         while (balanceOnYourStock < capacity) {
             System.out.println("Введите вес метала который хотите сдать");
             int weightMetal = scanner.nextInt();
-
             if (weightMetal > (capacity-balanceOnYourStock)) {
                 System.out.println("Вы превысили допустимый лимит. Рекомендую вам сдать меньше металла или поискать другой склад)");
                 continue;
@@ -80,14 +79,11 @@ public class HW4AQA {
                 continue;
             }
             balanceOnYourStock = balanceOnYourStock + weightMetal;
-
             System.out.println("Вы сдали металл количеством: " + weightMetal + "кг. На складе находиться: " + (balanceOnYourStock) + "кг металла. Вы можете еще сдать: " + (capacity - balanceOnYourStock) + "кг металла.");
-
         }
-
         System.out.println("Вы заполнили своим металом весь склад!! Спасибо вам!!");
     }
-            }*/
+
 
         /*TASK4*/
         /*Первый будет состоять из следующих имен: “Петя”, “Маша”, “Алёна”, “Федя”, “Саша”, “Антон”, “Глеб”.
@@ -169,4 +165,3 @@ public class HW4AQA {
 
 
     }
-}
