@@ -53,6 +53,7 @@ public class MainForHW7 {
         student.theYearOfGraduation=2024;
         student.theColorOfCover="Синяя";
         student.theNameOfUniversity="DAN.IT";
+        System.out.println(student.theNameOfStudent+"\n"+student.theNameOfMatter+"\n"+student.theCountOfPages+"\n"+student.theYearOfGraduation+"\n"+student.theColorOfCover+"\n"+student.theNameOfUniversity);
 
     }
 }
