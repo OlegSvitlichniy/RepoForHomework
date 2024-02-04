@@ -26,16 +26,7 @@ public class Task1 {
             }
         }
     }
-    public static void main(String[] args) {
-        Random randomTask1 = new Random();
-        int[] arrayForTask1 = new int[10];
-        for (int i=0; i< arrayForTask1.length;i++ ){
-            arrayForTask1[i]= randomTask1.nextInt(1,20);
-        }
-        System.out.println(Arrays.toString(arrayForTask1));
-        System.out.println();
-        Task1 task = new Task1();
-        task.methodTask1(arrayForTask1);
-    }
 }
+
+
 
