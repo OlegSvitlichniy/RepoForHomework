@@ -67,7 +67,7 @@ public class HW4AQA {
         System.out.println("Введите вместимость вашего склада:");
         int capacity = scanner.nextInt();
         int balanceOnYourStock = 0;
-        while (balanceOnYourStock < capacity) {
+        while (balanceOnYourStock != capacity) {
             System.out.println("Введите вес метала который хотите сдать");
             int weightMetal = scanner.nextInt();
             if (weightMetal > (capacity-balanceOnYourStock)) {
@@ -78,10 +78,18 @@ public class HW4AQA {
                 System.out.println("Минимальный вес приема металла 5 кг. Попробуйте еще)");
                 continue;
             }
+            if ((capacity-(balanceOnYourStock + weightMetal))<5){
+                System.out.println("К сожалению вы не можете сдать больше металла, так как минимальный вес приема металла 5 кг . Вы сдали металл количеством: " + weightMetal + "кг.  " +
+                        "На складе находиться: " +(balanceOnYourStock+weightMetal) +" кг металла. ");
+                break;
+            }
             balanceOnYourStock = balanceOnYourStock + weightMetal;
-            System.out.println("Вы сдали металл количеством: " + weightMetal + "кг. На складе находиться: " + (balanceOnYourStock) + "кг металла. Вы можете еще сдать: " + (capacity - balanceOnYourStock) + "кг металла.");
+            System.out.println("Вы сдали металл количеством: " + weightMetal + "кг. " +
+                    "На складе находиться: " + (balanceOnYourStock) + "кг металла. " +
+                    "Вы можете еще сдать: " + (capacity - balanceOnYourStock) + "кг металла.");
+
         }
-        System.out.println("Вы заполнили своим металом весь склад!! Спасибо вам!!");
+        System.out.println("Вы заполнили склад!! Спасибо вам!!");
     }
 
 
