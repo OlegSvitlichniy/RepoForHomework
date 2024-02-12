@@ -9,6 +9,8 @@ public class MainTask1 {
         Task1Computer task1Computer = new Task1Computer("блаблабла", 1, 2,2);
         Task1Computer task1Computer1 = new Task1Computer("блаблабла", 2, 2,2);
         System.out.println(task1Computer.equals(task1Computer1));
+        task1Computer.toString();
+        task1Computer1.toString();
         }
     }
 
