@@ -4,11 +4,12 @@ public class HW2AQA {
     public static void main(String[] args) {
         /*TASk1*/
         String string1 = "This line that i want to cut, cause it is too long";
-        String string2 = string1.substring(0 , 35);
-        String string3 = "This line that don't want to cut, cause it is perfect".substring(0 , 35);
-        System.out.println(string1 + " = " + string1.length());
-        System.out.println(string2 + " = " + string2.length());
-        System.out.println(string3 + " = " + string3.length());
+        String string2 = string1.substring(0, 35);
+        System.out.println(string2);
+        System.out.println("Количество элементов - " + string2.length());
+        String string3 = string2 + " " + "it is perfect";
+        System.out.println(string3);
+        System.out.println("Количество элементов - " + string3.length());
         System.out.println("================================================================================");
 
         /*TASK2*/
