@@ -3,14 +3,13 @@ package HomeWorkJAVA;
 public class HW2AQA {
     public static void main(String[] args) {
         /*TASk1*/
-        String string1 = "This line that i want to cut, cause it is too long";
-        String string2 = string1.substring(0, 35);
-        System.out.println(string2);
-        System.out.println("Количество элементов - " + string2.length());
-        String string3 = string2 + " " + "it is perfect";
-        System.out.println(string3);
-        System.out.println("Количество элементов - " + string3.length());
-        System.out.println("================================================================================");
+        String string1 = "This line that I want to cut, cause it is too long";
+        String string2 = string1.substring(0,string1.length()-15);
+        String string3 = string2.replace("want", "don't want") + " it is perfect";
+
+        System.out.println(string1 + ". Кол-во элементов = " + string1.length());
+        System.out.println(string2 + ". Кол-во элементов = " + string2.length());
+        System.out.println(string3 + ". Кол-во элементов = " + string3.length());
 
         /*TASK2*/
         String jobtextTask2 ="Testing is my favourite job";
